@@ -11,7 +11,7 @@ file_list = []
 
 if '.' in raw_list:
     files_in_dir = [f for f in listdir('.') if isfile(join('.', f))]
-    file_list = list(filter(lambda file : file.endswith('.pdf'), files_in_dir))
+    file_list = sorted(list(filter(lambda file : file.endswith('.pdf'), files_in_dir)))
 else:
     file_list = list(filter(lambda file : file.endswith('.pdf'), raw_list))
 
