@@ -28,6 +28,7 @@ try:
 except Exception as e:
     merger.close()
     print(f"ERROR: {e}")
+    exit(code=1)
 
 parser.exit("\nFiles merged successfully!")
 
